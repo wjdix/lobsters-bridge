@@ -1,0 +1,7 @@
+language: rust
+rust:
+  - nightly
+install:
+  - cargo install cargo-deb
+script:
+  - cargo deb --target=i686-unknown-linux-gnu
