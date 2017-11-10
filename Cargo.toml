@@ -1,0 +1,32 @@
+[package]
+name = "lobsters_bridge"
+version = "0.1.0"
+authors = ["dix <william.j.dix@gmail.com>"]
+
+[package.metatdata.deb]
+maintainer = "dix <william.j.dix@gmail.com>"
+copyright = "2017, William Dix"
+license_file = ["LICENSE", "0"]
+extended_description = ""
+depends = "$auto"
+section = "utility"
+priority = "optional"
+architecture = "amd64"
+assets = [
+  ["target/release/lobsters-bridge", "usr/bin/", "755"],
+]
+
+[dependencies]
+clippy = {version = "*", optional = true}
+reqwest = "*"
+rss = "*"
+RustyXML = "*"
+csv = "*"
+hyper = "*"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+
+
+[features]
+default = []
