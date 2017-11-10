@@ -3,7 +3,7 @@ name = "lobsters_bridge"
 version = "0.1.0"
 authors = ["dix <william.j.dix@gmail.com>"]
 
-[package.metatdata.deb]
+[package.metadata.deb]
 maintainer = "dix <william.j.dix@gmail.com>"
 copyright = "2017, William Dix"
 license_file = ["LICENSE", "0"]

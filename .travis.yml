@@ -11,6 +11,7 @@ deploy:
   provider: packagecloud
   repository: lobsters-bridge
   username: dix
+  skip_cleanup: true
   dist: 'ubuntu/xenial'
   package_glob: '*.deb'
   token:
