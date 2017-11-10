@@ -1,6 +1,7 @@
 language: rust
 rust:
   - nightly
+
 install:
   - cargo install cargo-deb
 script:
